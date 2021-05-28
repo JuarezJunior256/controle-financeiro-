@@ -57,7 +57,9 @@ const updateBalanceValues = () => {
 
 // função de inicialização
 const init = () => {
+    // limpa o html para renderizar a lista
     transactionUl.innerHTML = ''
+    // renderiza as transações no html 
     transactions.forEach(addTransactionsIntoDOM)
     updateBalanceValues()
 }
